@@ -1,19 +1,19 @@
-'use strict'
+  'use strict'
 
-describe ('Plane', function () {
+  describe ('Plane', function () {
 
-  let plane;
+    let plane;
 
-  beforeEach(function() {
-    plane = new Plane();
-  });
+    beforeEach(function() {
+      plane = new Plane();
+    });
 
-  it('is an instance of a plane', function () {
-  expect(plane instanceof Plane).toBe(true)}
+    it('is an instance of a plane', function () {
+      expect(plane instanceof Plane).toBe(true)}
 
+    );
 
-);
-})
+  })
 
 
 

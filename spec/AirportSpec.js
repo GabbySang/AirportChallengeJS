@@ -11,34 +11,29 @@ describe ('Airport', function() {
   });
 
   it('is an instance of an Airport', function () {
-    expect(airport instanceof Airport).toBe(true)});
+    expect(airport instanceof Airport).toBe(true)
+  });
 
 
     describe("Land plane", function() {
-      var plane = jasmine.createSpyObj('plane', ['tempMethod']);
-      it('should allow a plane to land', function() {
-        airport.land(plane);
+      it('should allow a plane to land', function() {airport.land(plane);
         expect(airport.planes).toContain(plane);
       });
     });
 
     describe('taking off a plane', function() {
-      // var plane = jasmine.createSpyObj('plane', ['tempMethod']);
       it('should allow a plane to take off', function() {
         airport.land(plane);
         airport.takeOff(plane);
-        expect(airport.planes).not.toContain(plane);
+        expect(airport.planes).toBeLessThan(40);
       });
     });
-  });
 
-// let planes = []
-// expect(planes.length).toEqual(0)
-// airport.land(plane)
-// expect(planes).toEqual(plane)
+    describe('Capacity', function() {
+      it('should not allow a plane to land if full', function () {
+      if (airport.planes.length >= 40)
+      {expect(airport.land(plane)).toThrow("Airport is full, you cannot land")}
 
-// var plane;
-//
-// beforeEach(function() {
-//   plane = new Plane();
-// });
+})
+})
+})
