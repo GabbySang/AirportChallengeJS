@@ -1,14 +1,14 @@
 'use strict'
 
-function Airport (){};
-  // this.land = true;
+function Airport(){
+  this.planes = []
 
+  Airport.prototype.land = function(plane){
+    this.planes.push(plane)
+  }
 
-// Airport.prototype.isLanded = function (){
-//   this.land = true;
-// }
+  Airport.prototype.takeOff = function(plane) {
+    this.planes.splice(this.planes.indexOf(plane), 1);
+  };
 
-
-
-    // Thermostat.prototype.switchPowerSavingModeOn = function() {
-    //   this.powerSavingMode = true;
+}
