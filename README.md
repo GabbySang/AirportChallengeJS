@@ -39,9 +39,10 @@ As an air traffic controller
 To ensure safety
 I want to prevent landing when weather is stormy
 
+Your task is to test drive the creation of a set of classes/modules to satisfy all the above user stories. You will need to use _a random number generator_ to set the weather (it is normally sunny but on rare occasions it may be stormy). In your tests, you'll need to use a stub to override random weather to ensure consistent test behaviour.
+
 Still would like to complete...
 -----
-Your task is to test drive the creation of a set of classes/modules to satisfy all the above user stories. You will need to use _a random number generator_ to set the weather (it is normally sunny but on rare occasions it may be stormy). In your tests, you'll need to use a stub to override random weather to ensure consistent test behaviour.
 
 Your code should defend against edge cases such as inconsistent states of the system ensuring that planes can only take off from airports they are in; planes that are already flying cannot take off and/or be in an airport; planes that are landed cannot land again and must be in an airport, etc.
 
